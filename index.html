@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,31 +9,43 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
     .container {
       text-align: center;
     }
     h1 {
       color: #333;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
     p {
       color: #666;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
     }
     /* Responsive styles */
     @media only screen and (max-width: 600px) {
-      body {
-        padding: 20px;
-      }
       h1 {
         font-size: 24px;
       }
       p {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   </style>
@@ -41,11 +53,14 @@
 <body>
   <div class="container">
     <h1>Store Opening Soon</h1>
-    <p>We're excited to announce that our new store will be opening soon!</p>
-    <p>Stay tuned for updates and more information.</p>
-    <div>
-  <button onclick="window.location.href = 'login.html';">Continue</button>
-     </div>
-      </div>
+    <p>We're excited to announce that our new store will be opening soon! Stay tuned for updates and more information.</p>
+    <button onclick="redirectToLoginPage()">Continue to Login</button>
+  </div>
+
+  <script>
+    function redirectToLoginPage() {
+      window.location.href = 'login.html';
+    }
+  </script>
 </body>
 </html>
