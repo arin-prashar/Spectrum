@@ -1,0 +1,34 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/assets/css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="login-container">
+        <h1>Spectrum Shack</h1>
+        <input type="text" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-btn" class="btn" onclick="loginWithEmailPassword()">Login</button>
+        
+        <div id="forget-password">Forget Password?</div>
+
+        <div id="otp-container">
+            <h2>----or----</h2>
+            <input type="text" id="email" placeholder="Email">
+            <button id="otp-btn" class="btn" onclick="requestOTP()">Request OTP</button>
+        </div>
+        
+        <button id="google-btn" class="btn" onclick="redirectTo('google')">Login with Google</button>
+        <button id="instagram-btn" class="btn" onclick="redirectTo('instagram')">Login with Instagram</button>
+        <button id="facebook-btn" class="btn" onclick="redirectTo('facebook')">Login with Facebook</button>
+    </div>
+    <!--
+        Javascript should be inside this file.
+    -->
+    <script src="/src/assets/js/main.js"></script>
+    
+</body>
+</html>
